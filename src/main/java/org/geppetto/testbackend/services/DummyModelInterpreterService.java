@@ -138,10 +138,10 @@ public class DummyModelInterpreterService implements IModelInterpreter
 		{
 			// Create a Position
 			Point position = new Point();
-			position.setX(getRandomGenerator().nextDouble() * 10);
-			position.setY(getRandomGenerator().nextDouble() * 10);
-			position.setZ(getRandomGenerator().nextDouble() * 10);
-
+			position.setX(getRandomGenerator().nextDouble() * 100);
+			position.setY(getRandomGenerator().nextDouble() * 100);
+			position.setZ(getRandomGenerator().nextDouble() * 100);
+			
 			// Create particle and set position
 			Particle particle = new Particle();
 			particle.setPosition(position);
