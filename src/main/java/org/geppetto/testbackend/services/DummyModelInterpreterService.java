@@ -146,7 +146,7 @@ public class DummyModelInterpreterService implements IModelInterpreter {
 
 			// Create particle and set position
 			Particle particle = new Particle();
-			particle.setPosition(position);
+			particle.setP(position);
 			particle.setId("P" + i);
 
 			// Add created geometries to entities
@@ -182,7 +182,7 @@ public class DummyModelInterpreterService implements IModelInterpreter {
 
 			// Create a new Cylinder
 			Cylinder cylynder = new Cylinder();
-			cylynder.setPosition(position);
+			cylynder.setP(position);
 			cylynder.setDistal(position2);
 			cylynder.setId("C" + i);
 			cylynder.setRadiusBottom(getRandomGenerator().nextDouble() * 10);
@@ -190,7 +190,7 @@ public class DummyModelInterpreterService implements IModelInterpreter {
 
 			// Create new sphere and set values
 			Sphere sphere = new Sphere();
-			sphere.setPosition(position2);
+			sphere.setP(position2);
 			sphere.setId("S" + i);
 			sphere.setRadius(getRandomGenerator().nextDouble() * 10);
 
