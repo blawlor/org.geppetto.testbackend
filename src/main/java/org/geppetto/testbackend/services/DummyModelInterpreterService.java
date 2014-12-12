@@ -126,6 +126,17 @@ public class DummyModelInterpreterService implements IModelInterpreter
 		
 		return true;
 	}
+	
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.geppetto.core.model.IModelInterpreter#populateModelTree(org.geppetto.core.model.runtime.AspectNode,java.lang.String)
+	 */
+	@Override
+	public boolean writeModel(AspectNode aspectNode, String format) throws ModelInterpreterException {
+		return false;
+	}
+	
 
 	@Override
 	public String getName()
